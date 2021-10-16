@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
-    <!-- <a href="#" style="--clr: #ff22bb; --i:0;"><span>Button</span></a> -->
-    <!-- <a href="#" style="--clr: #00ccff; --i:1;"><span>Button</span></a> -->
-    <a href="#" style="--clr: #22e622; --i:2;">
+    <a onclick="myFunction()" href="#" style="--clr: #22e622; --i:2;">
         <span>
                 <div class="wavy">
 
@@ -132,6 +129,7 @@
                     <span style="--i1:8;">a</span>
                     <span style="--i1:9;">m</span>
                     <span style="--i1:10;">n</span>
+                    <span style="--i1:10;">g</span>
                     <span style="--i1:1;">à</span>
                     <span style="--i1:2;">y</span>
                     <span style="--i1:3;">m</span>
@@ -241,14 +239,19 @@
         </span>
     </a>
 
-    <!-- <iframe src="https://www.nhaccuatui.com/mh/auto/tddgG25v4K" width="620" height="382" frameborder="0" allowfullscreen
-        allow="autoplay"></iframe> -->
-        <audio autoplay>
-            <!-- <source src="horse.ogg" type="audio/ogg"> -->
+        <audio  autoplay>
             <source src="./XTVN.mp3" type="audio/mpeg">
         </audio>
-    <div class="text-center p-4 navbar-light bg-light">
+        <audio id="myAudio" autoplay></audio>
+        <p id="demo"></p>
+    <div onclick="myFunction()" class="text-center p-4 navbar-light bg-light">
         <a class="text-reset fw-bold " href="#">© 2021 Copyright: Nguyễn Khánh Duy</a>
     </div>
+    <script>
+        function myFunction() {
+            x.setAttribute("src", "XTVN.mp3");
+            document.getElementById("myAudio").appendChild(x);
+            }
+    </script>
 </body>
 </html>
